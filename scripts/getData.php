@@ -13,7 +13,7 @@ function getRequest() {
 function getRequests() {
 }
 
-function getAssignment($requestID, $volunteerID)
+function getAssignment($con, $requestID, $volunteerID)
 {
 	$result = mysqli_query($con,"SELECT * FROM assignments");
 	while($row = mysqli_fetch_array($result)) {
