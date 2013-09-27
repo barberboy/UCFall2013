@@ -18,7 +18,7 @@ function addStudent($con, $firstName, $lastName, $ucID, $email, $phone, $passwor
 	}
 }
 function addAssignment() {
-
+  //it doesn't work yet
 }
 function archive() {
 
