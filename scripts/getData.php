@@ -42,5 +42,3 @@ function getRecommended(){
 //getAssignment('$_POST[volunteerID]','$_POST[requestID]');
 
 ?>
-
-?>
