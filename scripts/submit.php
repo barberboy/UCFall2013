@@ -17,8 +17,25 @@ function addStudent($con, $firstName, $lastName, $ucID, $email, $phone, $passwor
 		die('Error: ' . mysqli_error($con));
 	}
 }
-function addAssignment() {
-  //it doesn't work yet
+/**
+*Function that takes in $requestID and volunteerID and returns a single assignmentID.
+*/
+function addAssignment($con, $requestID, $volunteerID) {
+	$date = mysqli_query($con,"SELECT * FROM requests");
+	while($row = mysqli_fetch_array($date)) {
+ 		if ($requestID == $row['requestID']) {
+ 		$date = $row['expirationDate'];
+  		break;
+  		}
+	}  
+	mysqli_query($con, "INSERT INTO assignments (requestID, volunteerID, expirationDate)
+		VALUES ('$requestID', '$volunteerID', '$date')");
+}
+/**
+*Function that takes in a connection and a assignmentID and removes an assignment.
+*/
+function removeAssignment($con, $assignID) {
+	mysqli_query($con,"DELETE FROM assignments WHERE assignmentID ='$assignID'");
 }
 function archive() {
 
