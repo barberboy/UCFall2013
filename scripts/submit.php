@@ -42,6 +42,7 @@ function archive() {
 }
 function removeRequest($con,$requestID) {
 	mysquli_query($con, "DELETE FROM requests WHERE RequestID ='$requestID'");
+	//json_encode
 }
 function archiveRequest() {
 
