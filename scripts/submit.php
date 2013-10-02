@@ -40,8 +40,8 @@ function removeAssignment($con, $assignID) {
 function archive() {
 
 }
-function removeRequest() {
-
+function removeRequest($con,$requestID) {
+	mysquli_query($con, "DELETE FROM requests WHERE RequestID ='$requestID'");
 }
 function archiveRequest() {
 
