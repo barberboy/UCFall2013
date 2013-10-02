@@ -4,7 +4,9 @@ require 'connect.php';
 function getStudent() {
 }
 
-function getStudents() {
+function getAllStudents() {
+	
+	
 }
 
 function getRequest() {
