@@ -1,0 +1,65 @@
+/**************Resets******************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td,a{ 
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+/**********************************/
+/********General Styles************/
+body {
+  font-size:1em;
+  font-family: Georgia;
+  font-size: 16px;
+}
+article{
+  width:40em;
+}
+h1{
+    font-size:2em;
+}
+input{
+    border:1px solid #b0b0b0;
+    color:#979797;
+    width:190px;
+    margin:auto;
+   
+}
+#contact_info {
+    margin:2em;
+    width:
+    margin:auto;
+}
+label{
+}
+a{
+    color:#000;
+}
+/**********************************/
+/********Button Styles*************/
+#community ul li{
+    display:block;
+    padding: 4px 20px;
+    margin-bottom:10px;
+    margin-top:10px;
+    border: 5px solid #545252;
+    border-radius: 120px;
+    border-style:outset;
+    text-decoration:none;
+    
+}
+#community .buttons nav {
+    max-width:60%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+.buttons nav ul li{ 
+    max-width: 600%;
+    margin: auto;
+}
