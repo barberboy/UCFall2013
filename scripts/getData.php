@@ -1,11 +1,20 @@
 <?php
 require 'connect.php';
 
-function getStudent() {
+function getStudent($con, $studentID) {
+	
+	$student = mysqli_query($con, 
+	"SELECT First_Name, Last_Name 
+	FROM volunteer 
+	WHERE studentID = $studentID");
+	return $student;
+	
 }
 
-function getAllStudents() {
+function getAllStudents($con) {
 	
+	$allStudents = mysqli_query($con, "SELECT First_Name, Last_Name FROM volunteer");
+	return $allStudents;
 	
 }
 
