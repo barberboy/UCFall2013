@@ -1,21 +1,34 @@
 <?php
 require 'connect.php';
 
-function getStudent($con, $studentID) {
+function getStudent($con, $UCID) {
 	
 	$student = mysqli_query($con, 
-	"SELECT First_Name, Last_Name 
+	"SELECT * 
 	FROM volunteer 
-	WHERE studentID = $studentID");
-	return $student;
+	WHERE UC_ID = $UCID");
+	
+	$studentArray = mysql_fetch_array($student, MYSQL_NUM);
+	
+	return json_encode($studentArray);
 	
 }
 
 function getAllStudents($con) {
 	
-	$allStudents = mysqli_query($con, "SELECT First_Name, Last_Name FROM volunteer");
-	return $allStudents;
+	$allStudents = mysqli_query($con, 
+	"SELECT * 
+	FROM volunteer");
 	
+	$studentArray = array();
+	
+	$index = 0;
+	while($row = mysql_fetch_assoc($allStudents)){ //fetchs associative array
+		$studentArray[$index] = $row;
+		$index ++;
+	}
+	
+	return json_encode($studentArray);
 }
 
 function getRequest() {
