@@ -31,10 +31,33 @@ function getAllStudents($con) {
 	return json_encode($studentArray);
 }
 
-function getRequest() {
+function getRequest($con, $requestID) {
+		
+	$request = mysqli_query($con,
+             "SELECT * FROM requests
+              WHERE requestID = $requestID");
+             
+              $requestArray = mysql_fetch_array($request);
+	
+	return json_encode($requestArray);
+    
 }
 
-function getRequests() {
+function getRequests($con, $requests) {
+	
+	$request = mysqli_query($con,
+             "SELECT * FROM requests);
+             
+        $requestArray = array();
+        
+        $index = 0;
+        while ($row = mysql_fetch_array($requestArray)){
+               $requestArray[$index] = $row;
+               $index ++;
+        }
+        
+        return json_encode($requestsArray);
+   
 }
 
 function getAssignment($con, $requestID, $volunteerID)
