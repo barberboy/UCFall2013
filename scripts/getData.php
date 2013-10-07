@@ -45,19 +45,7 @@ function getRequest($con, $requestID) {
 
 function getRequests($con, $requests) {
 	
-	$request = mysqli_query($con,
-             "SELECT * FROM requests);
-             
-        $requestArray = array();
-        
-        $index = 0;
-        while ($row = mysql_fetch_array($requestArray)){
-               $requestArray[$index] = $row;
-               $index ++;
-        }
-        
-        return json_encode($requestsArray);
-   
+
 }
 
 function getAssignment($con, $requestID, $volunteerID)
