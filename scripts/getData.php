@@ -45,7 +45,16 @@ function getRequest($con, $requestID) {
 
 function getRequests($con, $requests) {
 	
-
+	$allrequests =mysqi_query($con, $sql
+		"SELECT * FROM requests");
+	
+	$requestArray = array();
+	
+		while($row = mysqli_fetch_array($allrequests)) {
+		$requestArray 
+	}
+	
+	return json_encode($requestArray);
 }
 
 function getAssignment($con, $requestID, $volunteerID)
