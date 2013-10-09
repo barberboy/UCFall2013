@@ -34,17 +34,25 @@ function getAllStudents($con) {
 function getRequest($con, $requestID) {
 		
 	$request = mysqli_query($con,
-             "SELECT * FROM requests
-              WHERE requestID = $requestID");
+             "SELECT * 
+             FROM requests
+             WHERE requestID = $requestID");
              
-              $requestArray = mysql_fetch_array($request);
+	$requestArray = mysql_fetch_array($request);
 	
 	return json_encode($requestArray);
     
 }
 
-function getRequests($con, $requests) {
+function getRequests($con) {
 	
+	$requests = mysqli_query($con,
+		"SELECT * 
+		FROM requests");
+		
+	$requestsArray = mysql_fetch_array($requests);
+	
+	return json_encode($requestsArray)
 
 }
 
