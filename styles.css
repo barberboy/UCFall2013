@@ -23,12 +23,23 @@ article{
 h1{
     font-size:2em;
 }
+p{
+    padding: 5px 5px 10px 5px;
+}
+form ol li{
+    margin-left: 2em;
+    padding-bottom: 0.5em;
+}
 input{
     border:1px solid #b0b0b0;
-    color:#979797;
+    border-radius: 5px;
+    color: black;
     width:190px;
     margin:auto;
-   
+    margin-right: 1px;
+}
+textarea{
+    border-radius: 5px;
 }
 #contact_info {
     margin:2em;
@@ -40,6 +51,13 @@ label{
 a{
     color:#000;
 }
+#formContent{
+    max-width: 70%;
+    margin: auto;
+}
+textarea{
+    border-color: gray;
+}
 /**********************************/
 /********Button Styles*************/
 #community ul li{
@@ -47,19 +65,40 @@ a{
     padding: 4px 20px;
     margin-bottom:10px;
     margin-top:10px;
-    border: 5px solid #545252;
-    border-radius: 120px;
-    border-style:outset;
-    text-decoration:none;
-    
+    border: 1px solid #545252;
+    border-radius: 5px;
 }
 #community .buttons nav {
     max-width:60%;
     margin: auto;
     text-align: center;
     display: inline-block;
+    padding-left: 2em;
 }
 .buttons nav ul li{ 
     max-width: 600%;
     margin: auto;
+    display: inline;
+}
+#tabs ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #900000;
+    padding-bottom: 4.5px;
+}
+#tabs ul li{
+    display: inline;
+    border: solid;
+    border-width: 0 1px 0 1px;
+    margin: 0;
+    border-radius: 0;
+    background-color: gray;
+    padding-bottom: 5px;
+}   
+#community li.communityTab{
+    background-color: white;
+}
+a:visited{
+    background-color: inherit;
 }
