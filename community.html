@@ -5,23 +5,22 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         
         <title>Community</title>
-        <link href="styles.css" rel="stylesheet" />
-        
+        <link href="communityCSS.css" rel="stylesheet" />
     </head>
     
     <body id="community">
         <div id="tabs">
              <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="student.html">Students</a></li>
-                 <li><a href="community.html">Community Request</a></li>
-                 <li><a href="campusministries.html">Campus Ministries Logon</a></li>
+                 <li class="indexTab"><a href="index.html">Home</a></li>
+                 <li class="studentTab"><a href="student.html">Students</a></li>
+                 <li class="communityTab"><a href="communityRequest.html">Community Request</a></li>
+                 <li class="cmTab"><a href="campusministries.html">Campus Ministries Login</a></li>
              </ul>
         </div>
         <header>
             <h1>Community Request</h1>
         </header>
-    <section>
+    <section id="formContent">
        <article>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </p>
@@ -29,19 +28,18 @@
             
         <form action="" method="post">
          <ol>
-           <li><label>First Name:<input type="text" name="fname" placeholder="First" required autofocus></label></li>
-           <li><label>Last Name:<input type="text" name="lname" placeholder="Last" required ></label></li>
-           <li><label>Address:<input type="text" name="address" placeholder="Street Address" required ><input type="text" name="city" placeholder="City" required ><input type="text" name="state" placeholder="State" required ><input type="text" name="zip" placeholder="ZIP" required ></label></li>
-          <li><label>Email Address:<input type="email" name="email" placeholder="email@example.com" required ></label></li>
-          <li><label>Phone number:<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required ></label></li>
+           <li><label>First Name:<br><input type="text" name="fname" placeholder="First" required autofocus></label></li>
+           <li><label>Last Name:<br><input type="text" name="lname" placeholder="Last" required ></label></li>
+           <li><label>Address:<br><input type="text" name="address" placeholder="Street Address" required ></label><br><input type="text" name="city" placeholder="City" required > Nebraska,
+               <input type="text" name="zip" placeholder="ZIP" required ></li>
+          <li><label>Email Address:<br><input type="email" name="email" placeholder="email@example.com" required ></label></li>
+          <li><label>Phone number:<br><input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required ></label></li>
           <li><label>When would you like this done by?<input type="date" name="expiration" placeholder="" required ></label></li>
-          <li><label>Please give us some details about what we can do for you.<br><input type="text" name="details" placeholder="" required >             </label></li>
+          <li><label>Please give us some details about what we can do for you...<br><textarea class="detailsBox" name="details" placeholder="" rows="4" cols="50" required></textarea></label></li>
         </ol>
        </form>
-            
-</section>
-        <div class="buttons">
-        <p>Please select a catagory</p>
+       <p>...and select the catagory that fits it best.</p>   
+         <div class="buttons">
              <nav role="navigation">
             <ul>
                 <a href=""><li class="yardworklink">Yardwork</li></a>
@@ -52,5 +50,7 @@
             </ul>
         </nav>
         </div>
+</section>
+       
     </body>
     </html>
