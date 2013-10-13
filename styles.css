@@ -1,6 +1,6 @@
 /**************Resets******************/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
-pre,form,fieldset,input,textarea,p,blockquote,th,td,a{ 
+pre,form,fieldset,input,textarea,p,blockquote,th,td,a,label{ 
     margin:0;
     padding:0;
     list-style-type:none;
@@ -12,48 +12,84 @@ h1,h2,h3,h4,h5,h6 {
 }
 /**********************************/
 /********General Styles************/
+
 body {
-  font-size:1em;
-  font-family: Georgia;
-  font-size: 16px;
+    font-size:1.25em;
+    font-family: Garamond, serif;
+    height:100%;
+}
+#community {
+    margin-left: auto;
+    margin-right: auto;
+    width:50em;
 }
 article{
-  width:40em;
+    max-width:50em;
+    width:40em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+   line-height:1.2em;
+    font-size:1.25em;
 }
+#buttonFormWrapper {
+    max-width:50em;
+    margin: 0 auto;
+}
+#formContent{
+    margin-top:2.5em;
+    width:45%;
+    float:left;
+}
+#workSelection{
+    float:left;
+    width:45%;
+}
+
 h1{
-    font-size:2em;
+    font-size:2.25em;    
+    margin-top:1em;
 }
-p{
-    padding: 5px 5px 10px 5px;
+
+h2{
+    margin-top:2.5em;
 }
 form ol li{
     margin-left: 2em;
     padding-bottom: 0.5em;
+    
 }
 input{
-    border:1px solid #b0b0b0;
+    border:2px solid #b0b0b0;
     border-radius: 5px;
     color: black;
-    width:190px;
-    margin:auto;
-    margin-right: 1px;
+    width:14em;
+    margin-top:.5em;
+    height:2em;
+    padding:.25em 1em;
+    font-family: Helvetica, sans-serif;
+    font-size:.85em;
+    
+}
+#address input{
+    display:block;
+    margin-left:0em;
+    
 }
 textarea{
+    border:2px solid #b0b0b0;
     border-radius: 5px;
-}
-#contact_info {
-    margin:2em;
-    width:
-    margin:auto;
+    margin:.5em 0;
+    padding:.75em;
+    font-size:1em;
+    font-family: Helvetica, sans-serif;
+    width:18em;
 }
 label{
+   display:block;
 }
 a{
     color:#000;
-}
-#formContent{
-    max-width: 70%;
-    margin: auto;
 }
 textarea{
     border-color: gray;
@@ -73,13 +109,15 @@ textarea{
     margin: auto;
     text-align: center;
     display: inline-block;
-    padding-left: 2em;
 }
-.buttons nav ul li{ 
-    max-width: 600%;
+.buttons #navigation ul li{ 
+    border: 3px solid #545252;
+    max-width: 100%;
+    padding:2em 3em;
     margin: auto;
-    display: inline;
 }
+/**********************************/
+/**********Tab Styles**************/
 #tabs ul{
     list-style: none;
     padding: 0;
@@ -99,6 +137,22 @@ textarea{
 #community li.communityTab{
     background-color: white;
 }
+/**********************************/
+/**********Psuedo Classes**************/
 a:visited{
     background-color: inherit;
 }
+input:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+textarea:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+/*.buttons #navigation ul a:hover{
+    background-color:gray;   
+}
+*/
