@@ -8,7 +8,7 @@ function getStudent($con, $UCID) {
 	FROM volunteer 
 	WHERE UC_ID = $UCID");
 	
-	$studentArray = mysql_fetch_array($student, MYSQL_NUM);
+	$studentArray = mysqli_fetch_array($student, MYSQL_NUM);
 	
 	return json_encode($studentArray);
 	
@@ -23,7 +23,7 @@ function getAllStudents($con) {
 	$studentArray = array();
 	
 	$index = 0;
-	while($row = mysql_fetch_assoc($allStudents)){ //fetchs associative array
+	while($row = mysqli_fetch_assoc($allStudents)){ //fetchs associative array
 		$studentArray[$index] = $row;
 		$index ++;
 	}
@@ -38,7 +38,7 @@ function getRequest($con, $requestID) {
              FROM requests
              WHERE requestID = $requestID");
              
-	$requestArray = mysql_fetch_array($request);
+	$requestArray = mysqli_fetch_array($request);
 	
 	return json_encode($requestArray);
     
@@ -50,7 +50,7 @@ function getRequests($con) {
 		"SELECT * 
 		FROM requests");
 		
-	$requestsArray = mysql_fetch_array($requests);
+	$requestsArray = mysqli_fetch_array($requests);
 	
 	return json_encode($requestsArray)
 
@@ -105,7 +105,7 @@ function getAssignments($con){
 	$result = mysqli_query($con,$sql);
 	//echo $result;
 
-	$assignmnetArray = mysql_fetch_array($result, MYSQL_NUM);
+	$assignmnetArray = mysqli_fetch_array($result, MYSQL_NUM);
 	return json_encode($assignmnetArray);
 		
 }
