@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>Student Sign-Up</title>
+        <link href="studentSignUpCSS.css" rel="stylesheet" />
+    </head>
+    
+    <body id="community">
+        <div id="tabs">
+             <ul>
+                 <li class="indexTab"><a href="index.html">Home</a></li>
+                 <li class="studentTab"><a href="student.html">Students</a></li>
+                 <li class="communityTab"><a href="communityRequest.html">Community Request</a></li>
+                 <li class="cmTab"><a href="campusministries.html">Campus Ministries Login</a></li>
+             </ul>
+        </div>
+        <div id="contentWrapper">
+            <header>
+                <h1>Student Sign-Up</h1>
+            </header>
+            
+            <div id="buttonFormWrapper">
+                <section id="formContent">        
+                    <form action="" method="post">
+                        <ol>
+                           <li><label for="fname">First Name:</label><input type="text" name="fname" placeholder="First" required autofocus></li>
+                           <li><label for="lname">Last Name:</label><input type="text" name="lname" placeholder="Last" required ></li>
+                           <li class="address"><label for="dorm">Dorm: </label><input type="text" name="dorm" placeholder="Dorm name:" required >
+                               <input type="text" name="city" placeholder="Room #:" required></li>
+                            <li class="address"><label for="address">Village: </label><input type="text" name="address" placeholder="Street Address" required >
+                               <input type="text" name="city" placeholder="City" required>
+                               <input type="text" name="state" value="Nebraska">
+                               <input type="text" name="zip" placeholder="ZIP" required ></li>
+                          <li><label for="email">Email Address:</label><input type="email" name="email" placeholder="email@example.com" required ></li>
+                          <li><label for="phone">Phone Number:</label><input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required ></li>
+                          <!--<li><label for="expiration">When would you like this done by?</label><input type="date" name="expiration" placeholder="" required ></li>
+                          <li><label for="details">Let us know how we can help you!</label><textarea class="detailsBox" name="details" placeholder="" rows="4" cols="50" required></textarea></li>-->
+                        </ol>         
+                    </form>
+                </section>
+            </div>    
+        </div>
+    </body>
+    </html>
