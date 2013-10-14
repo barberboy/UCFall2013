@@ -1,0 +1,110 @@
+/**************Resets******************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td,a,label{ 
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+/**********************************/
+/********General Styles************/
+
+body {
+    font-size:1.25em;
+    font-family: Garamond, serif;
+    background-color:#900000;
+    height:100%;
+    background-image:url('http://unsplash.s3.amazonaws.com/batch%2011/berries.jpg');
+}
+#community {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:100%;
+    margin-top:1em;
+}
+#contentWrapper{
+    width:50em; 
+    margin-left:auto;
+    margin-right:auto;
+}
+#formContent{
+}
+h1{
+    font-size:2.25em;    
+    margin: 1em 0;
+}
+
+h2{
+    margin-top:2.5em;
+    font-size:1.15em;
+}
+form ol li{
+    padding-bottom: 0.5em;    
+}
+input{
+    border:2px solid #b0b0b0;
+    border-radius: 5px;
+    color: black;
+    width:14em;
+    margin-top:.5em;
+    height:2em;
+    padding:.25em 1em;
+    font-family: Helvetica, sans-serif;
+    font-size:.85em;   
+}
+.address input{
+    display:block;
+    margin-left:0em; 
+}
+label{
+   display:block;
+}
+a{
+    color:#000;
+}
+/**********************************/
+/********Button Styles*************/
+
+
+/**********************************/
+/**********Tab Styles**************/
+#tabs ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #900000;
+    padding-bottom: 4.5px;
+}
+#tabs ul li{
+    display: inline;
+    border: solid;
+    border-width: 0 1px 0 1px;
+    margin: 0;
+    border-radius: 0;
+    background-color: gray;
+    padding-bottom: 6px;
+    padding-left:20px;
+    padding-right:20px;
+}   
+#community li.communityTab{
+    background-color: white;
+}
+/**********************************/
+/**********Psuedo Classes**************/
+a:visited{
+    background-color: inherit;
+}
+input:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+textarea:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
