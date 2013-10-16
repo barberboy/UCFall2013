@@ -20,19 +20,6 @@ body {
     height:100%;
     background-image:url('http://unsplash.s3.amazonaws.com/batch%2011/berries.jpg');
 }
-#community {
-    margin-left: auto;
-    margin-right: auto;
-    max-width:100%;
-    margin-top:1em;
-}
-#contentWrapper{
-    width:50em; 
-    margin-left:auto;
-    margin-right:auto;
-}
-#formContent{
-}
 h1{
     font-size:2.25em;    
     margin: 1em 0;
@@ -42,9 +29,13 @@ h2{
     margin-top:2.5em;
     font-size:1.15em;
 }
-form ol li{
-    padding-bottom: 0.5em;    
+label{
+   display:block;
 }
+a{
+    color:#000;
+}
+
 input{
     border:2px solid #b0b0b0;
     border-radius: 5px;
@@ -56,20 +47,51 @@ input{
     font-family: Helvetica, sans-serif;
     font-size:.85em;   
 }
+/**********************************/
+/***************Layout************/
+#community {
+    max-width:100%;
+    /*margin-top:1em;*/
+}
+#contentWrapper{
+    max-width:50em;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+form ol li{
+    padding-bottom: 0.5em;
+    width:100%;
+    margin:auto;
+       
+}
 .address input{
     display:block;
     margin-left:0em; 
+}   
+#buttonFormWrapper {
+  
 }
-label{
-   display:block;
+#formContent{
+    float:left;
+    width:45%;
 }
-a{
-    color:#000;
+#studentSelection{
+    float:left;
+    width:45%;
+    margin-top:10%;
 }
 /**********************************/
 /********Button Styles*************/
-
-
+button {
+    display:block;
+    height:5em;
+    width:inherit;
+    background-color:gray;/*place holding color until we pick a color scheme */
+    color:white;
+    font-size:1em;
+    
+}
 /**********************************/
 /**********Tab Styles**************/
 #tabs ul{
@@ -77,18 +99,20 @@ a{
     padding: 0;
     margin: 0;
     background-color: #900000;
-    padding-bottom: 4.5px;
+    padding-bottom:.7%;
+    padding-top:1em;
 }
 #tabs ul li{
     display: inline;
     border: solid;
     border-width: 0 1px 0 1px;
+    border-top-width:1px;
     margin: 0;
-    border-radius: 0;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
     background-color: gray;
-    padding-bottom: 6px;
-    padding-left:20px;
-    padding-right:20px;
+    padding:.35em;
+    
 }   
 #community li.communityTab{
     background-color: white;
