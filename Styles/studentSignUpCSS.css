@@ -54,7 +54,7 @@ input{
     /*margin-top:1em;*/
 }
 #contentWrapper{
-    max-width:50em;
+    max-width:75%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -67,18 +67,17 @@ form ol li{
 }
 .address input{
     display:block;
-    margin-left:0em; 
+    margin; 
 }   
 #buttonFormWrapper {
-  
 }
 #formContent{
     float:left;
-    width:45%;
+    width:48%;
 }
 #studentSelection{
     float:left;
-    width:45%;
+    width:48%;
     margin-top:10%;
 }
 /**********************************/
@@ -90,6 +89,7 @@ button {
     background-color:gray;/*place holding color until we pick a color scheme */
     color:white;
     font-size:1em;
+    border-radius:5px;
     
 }
 /**********************************/
@@ -98,7 +98,7 @@ button {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #900000;
+    background-color: #830019;
     padding-bottom:.7%;
     padding-top:1em;
 }
@@ -124,11 +124,19 @@ a:visited{
 }
 input:focus { 
     outline:none;
-    border-color:#9ecaed;
+    border:1px solid #4d90fe;
     box-shadow:0 0 10px #9ecaed;
+}
+input:hover{
+     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
 }
 textarea:focus { 
     outline:none;
-    border-color:#9ecaed;
-    box-shadow:0 0 10px #9ecaed;
+    border-color:#4d90fe;
+    box-shadow:0 0 15px #9ecaed;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
 }
