@@ -24,7 +24,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width:100%;
-    margin-top:1em;
 }
 #contentWrapper{
     width:50em; 
@@ -126,8 +125,9 @@ textarea{
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #900000;
+    background-color: #830019;
     padding-bottom: 4.5px;
+    padding-top:1em;
 }
 #tabs ul li{
     display: inline;
@@ -138,7 +138,7 @@ textarea{
     background-color: gray;
     padding-bottom: 6px;
     padding-left:20px;
-    padding-right:20px;
+    padding-right:20px;   
 }   
 #community li.communityTab{
     background-color: white;
@@ -150,12 +150,12 @@ a:visited{
 }
 input:focus { 
     outline:none;
-    border-color:#9ecaed;
+    border-color:#4d90fe;
     box-shadow:0 0 10px #9ecaed;
 }
 textarea:focus { 
     outline:none;
-    border-color:#9ecaed;
+    border-color:#4d90fe;
     box-shadow:0 0 10px #9ecaed;
 }
 .buttons ul li:hover{
